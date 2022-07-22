@@ -1,0 +1,288 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+
+.FrontPage{
+    height: 50vh;
+    width: 100vw;
+}
+
+nav{
+    height: 4.5rem;
+    width: 100%;
+}
+
+nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 4.5rem;
+    width: 100%;
+    opacity: 0.3;
+}
+
+nav ul{
+    height: 4.5rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav img{
+    height: 2.4rem;
+    padding: 1rem;
+}
+
+nav li{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 1.25rem;
+    font-family: 'Lato', sans-serif;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Background Image */
+
+.welcome-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background-image: url(./images/spaghetti-1932466_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Welcome Text  */
+
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 16.125rem;
+    color: white;
+    line-height: 2;
+    font-family: 'Merriweather', serif;
+}
+
+.welcome-text h2{
+    margin-top: 3rem;
+    font-size: 2.8rem;
+}
+
+.welcome-text p{
+    width: 55%;
+    text-align: center;
+    font-size: large;
+}
+
+.btn{
+    margin: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    width: 6rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Services */
+
+.services img{
+    height: 5rem;
+}
+
+.services h3{
+    text-align: center;
+    margin: 3.125rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.boxes{
+    display: flex;
+    width: 100%;
+    height: 386px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    border: 3px solid maroon;
+    background-color: #F0DBD3;
+    border-radius: 20px;
+    height: 200px;
+    width: 350px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.box p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Clients */
+
+.clients{
+    border: 1px solid grey;
+    border-right: 0px;
+    border-left: 0px;
+    width: 100%;
+    height: 210px;
+}
+
+.clients::before{
+    content: '';
+    position: absolute;
+    height: 210px;
+    width: 100%;
+    background-image: url(./images/Leaf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
+    
+}
+
+.clients h3{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.logos img{
+    height: 70px;
+    padding: 0px 25px;
+}
+
+/* Contact */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    height: 400px;
+    width: 100%;
+}
+
+.contact::before{
+    content: '';
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    background-image: url(./images/office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.contact h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact input{
+    height: 30px;
+    width: 45%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+label{
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.label-phone{
+    position: relative;
+    right: 330px;
+}
+
+.label-text{
+    position: relative;
+    right: 360px;
+}
+
+.label-message{
+    position: relative;
+    right: 350px;
+}
+
+.contact button{
+    margin-top: 20px;
+    height: 35px;
+    width: 45%;
+    border: 3px solid white;
+    border-radius: 7px;
+    background-color: rgb(190, 69, 26);
+    color: white;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background-color: rgb(216, 68, 14);
+}
+
+/* Footer */
+
+footer{
+    font-family: 'Merriweather', serif;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+

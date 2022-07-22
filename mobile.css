@@ -1,0 +1,102 @@
+/* Navigation Bar */
+
+ul{
+    justify-content: center;
+}
+
+nav a{
+    padding: 10px;
+}
+
+/* Front Page  */
+
+.welcome-text h2{
+    
+    font-size: 2rem;
+}
+
+.welcome-text p{
+    width: 60%;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Service Section */
+
+.services h3{
+    margin-top: 30px;
+}
+
+.boxes{
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.box{
+    margin: 20px auto;
+}
+
+/* Clients */
+
+.clients{
+    width: 100%;
+    height: fit-content;
+}
+
+.clients::before{
+    height: 390px;
+    background-size: 200%;
+}
+
+.logos{
+    flex-wrap: wrap;
+    padding: 15px 20px;
+}
+
+.logos img{
+    padding: 15px;
+}
+
+/* Contact Us */
+
+.contact{
+    height: 500px;
+    width: 100%;
+    justify-content: normal;
+}
+
+.contact::before{
+    height: 500px;
+}
+
+.contact h3{
+    margin: 40px;
+}
+
+label{
+    font-size: 13px;
+    margin-top: 9px;
+    font-weight: bold;
+}
+
+.label-phone{
+    position: relative;
+    right: 45px;
+}
+
+.label-text{
+    position: relative;
+    right: 70px;
+}
+
+.label-message{
+    position: relative;
+    right: 65px;
+}
+
+/* Footer */
+
+footer{
+    height: 20px;
+}
